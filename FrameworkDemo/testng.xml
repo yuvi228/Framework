@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="FrameworkDemo">
+	<test thread-count="5" verbose="5" name="FrameworkDemo Test">
+		<classes>
+			<class name="test.demo.Demo" />
+
+		</classes>
+	</test> <!-- Framework demo test -->
+
+
+
+</suite> <!-- Default suite -->

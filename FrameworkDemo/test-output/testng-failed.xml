@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [FrameworkDemo]">
+  <test thread-count="5" name="FrameworkDemo Test(failed)">
+    <classes>
+      <class name="test.demo.Demo">
+        <methods>
+          <include name="setUp"/>
+          <include name="getResult"/>
+          <include name="googleRedirect"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- test.demo.Demo -->
+    </classes>
+  </test> <!-- FrameworkDemo Test(failed) -->
+</suite> <!-- Failed suite [FrameworkDemo] -->
