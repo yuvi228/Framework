@@ -11,7 +11,7 @@ public class Baseclass {
 
 
 
-	public Baseclass() {
+	public void init() {
 		// TODO Auto-generated constructor stub
 		System.setProperty("webdriver.chrome.driver",
 				System.getProperty("user.dir") + "\\src\\main\\resources\\chromedriver.exe");

@@ -41,7 +41,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a>
-				<span class='suite-start-time'>Aug 21, 2019 12:21:34 AM</span>
+				<span class='suite-start-time'>Aug 24, 2019 12:00:48 AM</span>
 			</a>
 			<a>
 				<span>v3.0.0</span>
@@ -126,7 +126,7 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span><span class='strong'>0</span> test(s) passed</span>
+					<span><span class='strong'>1</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong'>1</span> test(s) failed, <span class='strong'>0</span> others
@@ -141,10 +141,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span><span class='strong'>0</span> step(s) passed</span>
+					<span><span class='strong'>2</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong'>2</span> step(s) failed, <span class='strong'>0</span> others
+					<span class='strong'>3</span> step(s) failed, <span class='strong'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -162,22 +162,22 @@
 				
 				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Club owner Flow</span>
-						<span class='test-time'>Aug 21, 2019 12:21:34 AM</span>
+						<span class='test-name'>test.demo.Demo</span>
+						<span class='test-time'>Aug 24, 2019 12:00:48 AM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 21, 2019 12:21:34 AM</span>
-	<span class='label end-time'>Aug 21, 2019 12:21:38 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+990ms</span>
+	<span class='label start-time'>Aug 24, 2019 12:00:48 AM</span>
+	<span class='label end-time'>Aug 24, 2019 12:01:12 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 24s+37ms</span>
 </div>
 	<ul class='collapsible node-list' data-collapsible='accordion'>
 		
 				<li class='node level-1 leaf fail' status='fail' test-id='2'>
 					<div class='collapsible-header'>
-						<div class='node-name'>Login</div>						
-						<span class='node-time'>Aug 21, 2019 12:21:34 AM</span>
+						<div class='node-name'>googleRedirect</div>						
+						<span class='node-time'>Aug 24, 2019 12:00:48 AM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 						<div class='collapsible-body'>
@@ -193,12 +193,17 @@
 										<tbody>
 												<tr class='log' status='fail'>
 													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-													<td class='timestamp'>12:21:38 AM</td>
+													<td class='timestamp'>12:00:59 AM</td>
+													<td class='step-details'><span class='label white-text red'>Launching URL</span></td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>12:00:59 AM</td>
 													<td class='step-details'><span class='label white-text red'>googleRedirect Test case FAILED due to below issues:</span></td>
 												</tr>
 												<tr class='log' status='fail'>
 													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-													<td class='timestamp'>12:21:38 AM</td>
+													<td class='timestamp'>12:00:59 AM</td>
 													<td class='step-details'>java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
@@ -206,7 +211,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:568)
 	at org.testng.Assert.assertEquals(Assert.java:578)
-	at test.demo.Demo.googleRedirect(Demo.java:20)
+	at test.demo.Demo.googleRedirect(Demo.java:22)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -236,7 +241,42 @@
 										</tbody>
 									</table>
 										<ul class='screenshots'>
-												<li><img data-featherlight='E:\Learning\FrameworkDemo\FailedTestsScreenshots\googleRedirect20190821122138.png' width='25%' src='E:\Learning\FrameworkDemo\FailedTestsScreenshots\googleRedirect20190821122138.png'></li>
+												<li><img data-featherlight='C:\Users\Rajput\git\Framework\FrameworkDemo\FailedTestsScreenshots\googleRedirect20190824120059.png' width='25%' src='C:\Users\Rajput\git\Framework\FrameworkDemo\FailedTestsScreenshots\googleRedirect20190824120059.png'></li>
+										</ul>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='3'>
+					<div class='collapsible-header'>
+						<div class='node-name'>googleRedirect1</div>						
+						<span class='node-time'>Aug 24, 2019 12:01:00 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:01:12 AM</td>
+													<td class='step-details'><span class='label white-text green'>Launching URL</span></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:01:12 AM</td>
+													<td class='step-details'><span class='label white-text green'>googleRedirect1 Test Case PASSED</span></td>
+												</tr>
+										</tbody>
+									</table>
+										<ul class='screenshots'>
+												<li><img data-featherlight='C:\Users\Rajput\git\Framework\FrameworkDemo\FailedTestsScreenshots\googleRedirect120190824120112.png' width='25%' src='C:\Users\Rajput\git\Framework\FrameworkDemo\FailedTestsScreenshots\googleRedirect120190824120112.png'></li>
 										</ul>
 								</div>
 						</div>
@@ -310,8 +350,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 21, 2019 12:21:34 AM</td>
-										<td class='linked' test-id='2'>Club owner Flow.Login</td>
+										<td>Aug 24, 2019 12:00:48 AM</td>
+										<td class='linked' test-id='2'>test.demo.Demo.googleRedirect</td>
 										<td><pre>java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
@@ -319,7 +359,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:568)
 	at org.testng.Assert.assertEquals(Assert.java:578)
-	at test.demo.Demo.googleRedirect(Demo.java:20)
+	at test.demo.Demo.googleRedirect(Demo.java:22)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -370,31 +410,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>1</div>
-				</div>
-			</div>
-			<div class='col s2'>
-				<div class='card-panel r'>
-					Steps
 					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>5</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 21, 2019 12:21:34 AM</div>
+					<div class='panel-lead'>Aug 24, 2019 12:00:48 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 21, 2019 12:21:38 AM</div>
+			 		<div class='panel-lead'>Aug 24, 2019 12:01:12 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>4,327ms</div>
+					<div class='panel-lead'>24,429ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -450,7 +490,7 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 0,
+				passParent: 1,
 				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
@@ -458,8 +498,8 @@
 				skipParent: 0,
 				unknownParent: 0,
 				
-				passChild: 0,
-				failChild: 2,
+				passChild: 2,
+				failChild: 3,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
