@@ -5,7 +5,9 @@
     <classes>
       <class name="test.demo.Demo">
         <methods>
+          <include name="childTestname"/>
           <include name="setUp"/>
+          <include name="parentTestname"/>
           <include name="getResult"/>
           <include name="googleRedirect"/>
           <include name="tearDown"/>

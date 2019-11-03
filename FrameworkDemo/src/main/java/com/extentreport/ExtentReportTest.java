@@ -126,8 +126,8 @@ public class ExtentReportTest extends Baseclass {
 	@AfterSuite
 	public void tearDown() {
 		extent.flush();
-//		Util util = new Util();
-//		util.sendEmail();
+		Util util = new Util();
+		util.sendEmail();
 	}
 
 }

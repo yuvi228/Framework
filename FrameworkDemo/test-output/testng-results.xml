@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="FrameworkDemo" duration-ms="3981" started-at="2019-08-20T18:51:34Z" finished-at="2019-08-20T18:51:38Z">
+  <suite name="FrameworkDemo" duration-ms="23966" started-at="2019-08-23T18:30:48Z" finished-at="2019-08-23T18:31:12Z">
     <groups>
     </groups>
-    <test name="FrameworkDemo Test" duration-ms="3981" started-at="2019-08-20T18:51:34Z" finished-at="2019-08-20T18:51:38Z">
+    <test name="FrameworkDemo Test" duration-ms="23966" started-at="2019-08-23T18:30:48Z" finished-at="2019-08-23T18:31:12Z">
       <class name="test.demo.Demo">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.demo.Demo@2aa843]" name="setUp" is-config="true" duration-ms="286" started-at="2019-08-20T18:51:34Z" finished-at="2019-08-20T18:51:34Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.demo.Demo@1805618]" name="setUp" is-config="true" duration-ms="456" started-at="2019-08-23T18:30:48Z" finished-at="2019-08-23T18:30:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="googleRedirect()[pri:0, instance:test.demo.Demo@2aa843]" name="googleRedirect" duration-ms="3351" started-at="2019-08-20T18:51:34Z" finished-at="2019-08-20T18:51:38Z">
+        <test-method status="PASS" signature="parentTestname()[pri:0, instance:test.demo.Demo@1805618]" name="parentTestname" is-config="true" duration-ms="6" started-at="2019-08-23T18:30:48Z" finished-at="2019-08-23T18:30:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parentTestname -->
+        <test-method status="PASS" signature="childTestname(java.lang.reflect.Method)[pri:0, instance:test.demo.Demo@1805618]" name="childTestname" is-config="true" duration-ms="6" started-at="2019-08-23T18:30:48Z" finished-at="2019-08-23T18:30:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test.demo.Demo.googleRedirect() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- childTestname -->
+        <test-method status="FAIL" signature="googleRedirect()[pri:0, instance:test.demo.Demo@1805618]" name="googleRedirect" duration-ms="11001" started-at="2019-08-23T18:30:48Z" description="This is to launch google" finished-at="2019-08-23T18:30:59Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -24,7 +39,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:568)
 at org.testng.Assert.assertEquals(Assert.java:578)
-at test.demo.Demo.googleRedirect(Demo.java:20)
+at test.demo.Demo.googleRedirect(Demo.java:22)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -56,57 +71,44 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- googleRedirect -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.demo.Demo@2aa843]" name="getResult" is-config="true" duration-ms="570" started-at="2019-08-20T18:51:38Z" finished-at="2019-08-20T18:51:38Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.demo.Demo@1805618]" name="getResult" is-config="true" duration-ms="622" started-at="2019-08-23T18:30:59Z" finished-at="2019-08-23T18:31:00Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=googleRedirect status=FAILURE method=Demo.googleRedirect()[pri:0, instance:test.demo.Demo@2aa843] output={null}]]]>
+                <![CDATA[[TestResult name=googleRedirect status=FAILURE method=Demo.googleRedirect()[pri:0, instance:test.demo.Demo@1805618] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="FAIL" signature="tearDown()[pri:0, instance:test.demo.Demo@2aa843]" name="tearDown" is-config="true" duration-ms="15616" started-at="2019-08-20T18:51:38Z" finished-at="2019-08-20T18:51:54Z">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[javax.mail.AuthenticationFailedException]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: javax.mail.AuthenticationFailedException
-at com.util.Util.sendEmail(Util.java:147)
-at com.extentreport.ExtentReportTest.tearDown(ExtentReportTest.java:95)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:425)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: javax.mail.AuthenticationFailedException
-at javax.mail.Service.connect(Service.java:306)
-at javax.mail.Service.connect(Service.java:156)
-at javax.mail.Service.connect(Service.java:105)
-at javax.mail.Transport.send0(Transport.java:168)
-at javax.mail.Transport.send(Transport.java:98)
-at com.util.Util.sendEmail(Util.java:141)
-... 21 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+        <test-method status="PASS" signature="childTestname(java.lang.reflect.Method)[pri:0, instance:test.demo.Demo@1805618]" name="childTestname" is-config="true" duration-ms="1" started-at="2019-08-23T18:31:00Z" finished-at="2019-08-23T18:31:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test.demo.Demo.googleRedirect1() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- childTestname -->
+        <test-method status="PASS" signature="googleRedirect1()[pri:1, instance:test.demo.Demo@1805618]" name="googleRedirect1" duration-ms="11671" started-at="2019-08-23T18:31:00Z" description="This is to launch yahoo" finished-at="2019-08-23T18:31:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleRedirect1 -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.demo.Demo@1805618]" name="getResult" is-config="true" duration-ms="586" started-at="2019-08-23T18:31:12Z" finished-at="2019-08-23T18:31:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=googleRedirect1 status=SUCCESS method=Demo.googleRedirect1()[pri:1, instance:test.demo.Demo@1805618] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.demo.Demo@1805618]" name="tearDown" is-config="true" duration-ms="878" started-at="2019-08-23T18:31:12Z" finished-at="2019-08-23T18:31:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

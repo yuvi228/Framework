@@ -3,6 +3,8 @@ package com.testbase;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class Baseclass {
 
 	public static WebDriver driver; // To invoke Webdriver in Selenium
@@ -13,8 +15,7 @@ public class Baseclass {
 
 	public void init() {
 		// TODO Auto-generated constructor stub
-		System.setProperty("webdriver.chrome.driver",
-				System.getProperty("user.dir") + "\\src\\main\\resources\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
